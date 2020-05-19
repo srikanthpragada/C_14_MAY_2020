@@ -16,5 +16,4 @@ void main()
      avg = (marks1 + marks2) / 2.0;
 
      printf("Average : %f", avg);
-
 }
