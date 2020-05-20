@@ -13,9 +13,11 @@ void main()
       scanf("%d",&qty);
 
       amount = price * qty;
-      discount = 10 / 100  * amount;
+      discount = amount * 10 / 100;
       net_amount = amount - discount;
 
-      printf("Net Amount : %d", net_amount);
+      printf("Amount          : %5d\n",amount);
+      printf("- Discount      : %5d\n",discount);
+      printf("Net Amount      : %5d", net_amount);
 
 }
