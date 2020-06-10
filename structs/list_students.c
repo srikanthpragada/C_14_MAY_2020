@@ -17,11 +17,15 @@ void print_student(struct student s)
 
 main()
 {
-  struct student s1;
+  struct student students[5];
+  int i;
 
-    s1.english = 90;
-    s1.maths = 95;
-    strcpy(s1.name,"Bill");
-
-    print_student(s1);
+    srand(time(0));
+    for(i = 0; i < 5; i ++)
+    {
+        sprintf(students[i].name,"Name%d",i+1);
+        students[i].english = rand() % 100;
+        students[i].maths = rand() % 100;
+        print_student(students[i]);
+    }
 }
